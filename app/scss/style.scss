@@ -1,10 +1,8 @@
 @import 'vars';
 @import 'global';
 
-header{
+.header-inner{
     background-color: $bg;
-    height: 100px;
-    border-bottom: 1px solid #2b2b2b;
 }
 .top-header-inner{
     display: flex;
@@ -23,8 +21,8 @@ header{
     border-radius: 18px;
     margin-right: 50px;
     height: 36px;
-    color: #fff;
     font-size: 14px;
+    color: #fff;
 }
 .header-top-icons{
     display: flex;
@@ -65,11 +63,12 @@ header{
 .user-price{
     color: $btn-bg;
 }
-.middle-header-inner{
+.header-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    background-color: #fff;
     
 }
 .header-menu{
@@ -139,9 +138,90 @@ header{
         cursor: pointer;
         outline: none;
     }
+    button:hover{
+        background-color: #fff;
+        color: $btn-bg;
+        transition: all 1s;
+    }
 }
-button:hover{
+.about-us-search-box{
+    position: relative;
+}
+.about-us-search-back{
+    height: 135px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    position: absolute;
+}
+
+.about-us-search-back.first{
+    width: 1110px;
+    top: -83px;
+    left: 15px;
+}
+.about-us-search-back.second{
+    width: 1080px;
+    top: -96px;
+    left: 30px;
+}
+  
+.about-us-search{
+    padding: 40px 40px;
+    width: 1140px;
     background-color: #fff;
-    color: $btn-bg;
-    transition: all 1s;
+    position: absolute;
+    top: -70px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    input{
+        width: 808px;
+        padding: 20px 90px 20px 28px;
+        border-radius: 4px;
+        border: 1px solid #dcdcdc;
+        outline: none;
+    }
+    a{
+        position: absolute;
+        top: 60px;
+        left: 670px;
+        color: #555555;
+    }
+    button{
+        padding: 21px 68px;
+        border: none;
+        background-color: $btn-bg;
+        border-radius: 4px;
+        color: #fff;
+        margin-left: 23px;
+    }
+}
+.lnr.lnr-chevron-down{
+    left: 815px;
+    top: 65px;
+    font-size: 12px;
+    color: #676767;
+    cursor: pointer;
+}
+.our-services-box{
+    padding-top: 165px;
+    padding-bottom: 170px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    img{
+        margin-bottom: 40px;
+    }
+}
+.services-content-box-title{
+    font-size: 24px;
+    color: #000;
+}
+.services-content-box-text{
+    width: 330px;
+    padding: 35px 15px;
+    line-height: 30px;
+    color: #555555;
+}
+.services-content-box.second-box{
+    margin-top: -7px;
 }
