@@ -18,7 +18,7 @@ $('.products-slider-inner').slick({
     dots: false,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     prevArrow: '<button class="slick-arrow slick-prev"><img src="..//images/icons/lnr-chevron-left.svg"></button>',
     nextArrow: '<button class="slick-arrow slick-next"><img src="..//images/icons/lnr-chevron-right.svg"></button>',
   });
