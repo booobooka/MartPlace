@@ -14,26 +14,39 @@
 
 <body>
     <header class="header">
-        <div class="header-inner">
+        <div class="header__inner">
             <div class="container">
-                <div class="top-header-inner">
-                    <a class="header-logo" href="#">
+                <div class="top__header-inner">
+                    <a class="header__logo" href="#">
                         <img src="images/header-logo.png" alt="">
                     </a>
-                    <div class="header-panel">
-                        <a class="header-top-btn" href="#">
+                    <div class="header__panel">
+                        <a class="header__top-btn" href="#">
                             Become a Seller
                         </a>
-                        <div class="header-top-icons">
-                            <a class="lnr lnr-alarm" href="#"></a>
-                            <a class="lnr lnr-envelope" href="#"></a>
-                            <a class="lnr lnr-cart" href="#"></a>
-                        </div>
-                        <div class="header-user-box">
-                            <div class="user-circle">
-                                <img src="" alt="">
+                        <div class="header__top-icons">
+                            <div class="notification-icon icon-box">
+                                <a class="lnr lnr-alarm" href="#"></a>
+                                <div class="notifications-number numbers-box">
+                                    25
+                                </div>
                             </div>
-                            <div class="user-info">
+                            <div class="message-icon icon-box">
+                                <a class="lnr lnr-envelope" href="#"></a>
+                                <div class="messages-number numbers-box">
+                                    6
+                                </div>
+                            </div>
+                            <div class="purchases-icon icon-box">
+                                <a class="lnr lnr-cart" href="#"></a>
+                                <div class="purchases-number numbers-box">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__user-box">
+                            <div class="user-avatar" style="background-image: url(images/avatar.png);"></div>
+                            <div class="user__info">
                                 <a class="user-name" href="#">
                                     Taofiq Hakim
                                 </a>
@@ -46,10 +59,10 @@
                 </div>
             </div>
         </div>
-        <div class="middle-header-inner">
+        <div class="bottom__header-inner">
             <div class="container">
-                <div class="header-nav">
-                    <nav class="header-menu">
+                <div class="header__nav">
+                    <nav class="header__menu">
                         <ul>
                             <li><a href="#">Home</a></li>
                             <li><a href="#">All Products</a></li>
@@ -58,16 +71,22 @@
                             <li><a href="#">Pages</a></li>
                         </ul>
                     </nav>
-                    <div class="header-navigation">
-                        <input type="text" placeholder="Search product here....." required>
-                        <button type="submit">
-                            <a class="lnr lnr-magnifier" href="#"></a>
-                        </button>
+                    <div class="bottom__header-search-form">
+                        <form>
+                            <input type="search" placeholder="Search product here....." required>
+                            <button type="submit">
+                                <a class="lnr lnr-magnifier" href="#"></a>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header-bottom-inner">
+    </header>
+    <main>
+
+    </main>
+    <!-- <div class="header-bottom-inner">
             <div class="container">
                 <div class="header-bottom-title">
                     Create Your Own<br>
@@ -81,9 +100,8 @@
                     <button>Popular Products</button>
                 </div>
             </div>
-        </div>
-    </header>
-    <section class="about-us">
+        </div> -->
+    <!-- <section class="about-us">
         <div class="container">
             <div class="about-us-search-box">
                 <div class="about-us-search-back first"></div>
@@ -945,7 +963,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
