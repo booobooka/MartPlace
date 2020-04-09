@@ -22,3 +22,7 @@ $('.products-slider-inner').slick({
     prevArrow: '<button class="slick-arrow slick-prev"><img src="..//images/icons/lnr-chevron-left.svg"></button>',
     nextArrow: '<button class="slick-arrow slick-next"><img src="..//images/icons/lnr-chevron-right.svg"></button>',
   });
+
+  $(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});

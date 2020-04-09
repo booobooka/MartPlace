@@ -29,3 +29,7 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
