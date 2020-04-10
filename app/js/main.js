@@ -26,3 +26,18 @@ $('.featured__products-slider__inner').slick({
   $(document).ready(function() {
     $('.js-example-basic-single').select2();
 });
+
+
+ 
+  $(".rateYo").rateYo({
+ 
+    rating    : 5,
+    spacing   : "3px",
+    starWidth: "15px",
+    ratedFill: "#ffc000",
+    normalFill: "transparent",
+    readOnly: true
+    
+    
+  });
+ 
