@@ -13,15 +13,7 @@ $('.featured__products-slider__inner').slick({
     nextArrow: '<button class="slick-arrow slick-next"><img src="..//images/icons/lnr-chevron-right.svg"></button>',
   });
 
-  $('.folowers-slider-inner').slick({
-    arrows: true,
-    dots: false,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    autoplay: true,
-    prevArrow: '<button class="slick-arrow slick-prev"><img src="..//images/icons/lnr-chevron-left.svg"></button>',
-    nextArrow: '<button class="slick-arrow slick-next"><img src="..//images/icons/lnr-chevron-right.svg"></button>',
-  });
+
 
   $(document).ready(function() {
     $('.js-example-basic-single').select2();
@@ -133,4 +125,13 @@ $('.category-btn.software').on('click', function(){
 
 
 
-
+$('.followers-slider__inner').slick({
+  arrows: true,
+  dots: false,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: false,
+  variableWidth: true,
+  prevArrow: '<button class="slick-arrow slick-preve"><img src="..//images/icons/lnr-chevron-left.svg"></button>',
+  nextArrow: '<button class="slick-arrow slick-nexte"><img src="..//images/icons/lnr-chevron-right.svg"></button>',
+});

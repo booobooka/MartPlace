@@ -857,7 +857,32 @@
  
 //end of release products
 
+//start of followers feed
+.followers-feed{
+    background-color: #eff1f5;
+    padding: 120px 0px 90px;
+}
+.featured__products-panel-button.followers{
+    background-color: $blue;
+}
+.followers-slider__inner{
+    margin: 0px -18px;
+    padding-top: 50px;
+}
+.release-products__box.slide{
+    margin-left: 18px;
+    margin-right: 12px;
+}
+.slick-preve {
+    top: -79px;
+    right: 102px;
+}
 
+.slick-nexte {
+    top: -79px;
+    right: 51px;
+}
+//end of followers feed
 
 
 
