@@ -669,9 +669,11 @@
         outline: none;
         overflow: hidden;
     }
+
     button+button {
         margin-left: 10px;
     }
+
     button::before {
         content: '';
         position: absolute;
@@ -717,10 +719,12 @@
         }
     }
 }
-.category-btn.active{
+
+.category-btn.active {
     background-color: $blue;
     color: #fff;
 }
+
 .release-products__inner {
     margin-top: 50px;
     display: flex;
@@ -767,7 +771,8 @@
         padding: 25px 0px;
     }
 }
-.dev-photo{
+
+.dev-photo {
     width: 28px;
     height: 28px;
     background-color: $purple;
@@ -777,16 +782,19 @@
     background-position: center;
     cursor: pointer;
 }
-.products-dev-name{
+
+.products-dev-name {
     margin-left: 8px;
     margin-right: 20px;
     font-size: 15px;
     color: #000;
 }
-.release-products__dev-info{
+
+.release-products__dev-info {
     display: flex;
     align-items: center;
 }
+
 .border-line {
     border-bottom: 1px solid #ececec;
     margin-left: -30px;
@@ -848,31 +856,37 @@
     cursor: pointer;
     margin-top: 30px;
 }
-.select2-selection__rendered{
+
+.select2-selection__rendered {
     display: none;
 }
-.release-products_all-btn{
+
+.release-products_all-btn {
     text-align: center;
 }
- 
+
 //end of release products
 
 //start of followers feed
-.followers-feed{
+.followers-feed {
     background-color: #eff1f5;
     padding: 120px 0px 90px;
 }
-.featured__products-panel-button.followers{
+
+.featured__products-panel-button.followers {
     background-color: $blue;
 }
-.followers-slider__inner{
+
+.followers-slider__inner {
     margin: 0px -18px;
     padding-top: 50px;
 }
-.release-products__box.slide{
+
+.release-products__box.slide {
     margin-left: 18px;
     margin-right: 12px;
 }
+
 .slick-preve {
     top: -79px;
     right: 102px;
@@ -882,78 +896,53 @@
     top: -79px;
     right: 51px;
 }
+
 //end of followers feed
 
+//start of our achievements
+.our-achievements {
+    background-color: #212225;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 350px;
+    }
+}
+
+.our-achievements__box {
+    text-align: center;
+    &-icon {
+        font-size: 48px;
+        margin-bottom: 45px;
+    }
+    &-text{
+        font-size: 36px;
+        span{
+            display: block;
+            font-size: 18px;
+            color: #ffffff;
+            margin-top: 15px;
+        }
+    }
+}
+.our-achievements__box.case{
+    color: #feb71d;
+}
+.our-achievements__box.cloud{
+    color: #58c9e9;
+}
+.our-achievements__box.smile{
+    color: #77de51;;
+}
+.our-achievements__box.users{
+    color: #ff6a6d;
+}
 
 
 
-// .all-products-btn {
-//     background-color: $btn-bg;
-//     color: #fff;
-//     border-radius: 27.5px;
-//     border: none;
-//     outline: none;
-//     padding: 21px 33px;
-//     margin-top: 30px;
-//     margin-left: 475px;
-//     cursor: pointer;
-// }
+//end of our achievements
 
-// .folowers {
-//     background-color: #eff1f5;
-//     padding: 120px 0px;
-// }
 
-// .folowers-slider-inner {
-//     display: flex;
-//     justify-content: space-between;
-//     padding-top: 50px;
-// }
 
-// .release-products-box.slide {
-//     width: 360px !important;
-//     margin-left: 5px;
-
-// }
-
-// .slider-nav-button.folowers {
-//     background-color: $btn-bg;
-//     padding: 0px;
-// }
-
-// .sales-info {
-//     background-color: #212225;
-//     &-inner {
-//         display: flex;
-//         justify-content: space-between;
-//         align-items: center;
-//         min-height: 350px;
-//     }
-// }
-// .sales-info-item{
-//     text-align: center;
-//     &-img{
-//         font-size: 48px;
-//         margin-bottom: 50px;
-//     }
-//     &-number{
-//         font-size: 36px;
-//         margin-bottom: 25px;
-//     }
-//     &-text{
-//         font-size: 18px;
-//         color: #fff;
-//     }
-// }
-// .sales-info-item.case{
-//     color: #feb71d;
-// }
-// .sales-info-item.cloud{
-//     color: #58c9e9;
-// }
-// .sales-info-item.smile{
-//     color: #77de51;
-// }
-// .sales-info-item.users{
-//     color: #ff6a6d;
-// }
