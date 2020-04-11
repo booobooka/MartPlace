@@ -60,7 +60,6 @@ $('.category-btn.site-template').on('click', function(){
   $('.category-btn.site-template').addClass('active');
   $('.category-btn.plugins').removeClass('active');
   $('.category-btn.wordpress').removeClass('active');
-  $('.category-btn.site-template').removeClass('active');
   $('.category-btn.psd').removeClass('active');
   $('.category-btn.joomla').removeClass('active');
   $('.category-btn.user-interface').removeClass('active');
