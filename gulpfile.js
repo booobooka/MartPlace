@@ -5,7 +5,7 @@ let browserSync = require('browser-sync');
 let autoprefixer = require('gulp-autoprefixer');
 let concat = require('gulp-concat');
 let uglify = require('gulp-uglify');
-let cssmin = require('gulp-cssmin')
+let cssmin = require('gulp-cssmin'); 
 
 gulp.task('sass', function(){
    return gulp.src('app/scss/style.scss')
@@ -41,7 +41,7 @@ gulp.task('script', function(){
         'node_modules/rateyo/src/jquery.rateyo.js'
 
     ])
-        .pipe(concat('libs.min.js'))
+1        .pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'))
 });

@@ -939,10 +939,107 @@
 .our-achievements__box.users{
     color: #ff6a6d;
 }
-
-
-
 //end of our achievements
+
+//start of section why choose
+.why-choose{
+    background-color: #fff;
+    padding: 120px 0px 90px;
+}
+.why-choose__descr{
+    text-align: center;
+}
+.why-choose__title{
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 15px;
+    span{
+        color: $blue;
+    }
+}
+.why-choose__text{
+    color: #555555;
+    line-height: 30px;
+    width: 670px;
+    margin: 0 auto;
+}
+.why-choose__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    &-box{
+        height: 375px;
+        width: 360px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        &::after{
+            content: "";
+            font-weight: 300;
+            position: absolute;
+            font-size: 48px;
+            color: rgba(92, 135, 248, 0.2);
+            left: 20px;
+            top: 10px;
+        }
+        &-img{
+            font-size: 60px;
+            margin-bottom: 45px;
+            margin-top: 50px;
+        }
+        &-title{
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 24px;
+        }
+        &-text{
+            line-height: 30px;
+            color: #555555;
+            padding: 0px 30px 10px;
+        }
+
+    }
+}
+.lnr.lnr-license{
+    color: $blue;
+}
+.why-choose__content-box.payment::after{
+    content: '01';
+}
+.lnr.lnr-magic-wand{
+    color: $purple;
+}
+.why-choose__content-box.quality::after{
+    content: '02';
+}
+.lnr.lnr-lock{
+    color: #77de51;
+}
+.why-choose__content-box.secure::after{
+    content: '03';
+}
+.lnr.lnr-chart-bars{
+    color: #feb71d;
+}
+.why-choose__content-box.code::after{
+    content: '04';
+}
+.lnr.lnr-leaf{
+    color: #58c9e9;
+}
+.why-choose__content-box.leaf::after{
+    content: '05';
+}
+.lnr.lnr-phone{
+    color: #ff888a;
+}
+.why-choose__content-box.phone::after{
+    content: '06';
+}
+
+//end of section why choose
 
 
 
