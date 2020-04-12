@@ -913,13 +913,16 @@
 
 .our-achievements__box {
     text-align: center;
+
     &-icon {
         font-size: 48px;
         margin-bottom: 45px;
     }
-    &-text{
+
+    &-text {
         font-size: 36px;
-        span{
+
+        span {
             display: block;
             font-size: 18px;
             color: #ffffff;
@@ -927,55 +930,68 @@
         }
     }
 }
-.our-achievements__box.case{
+
+.our-achievements__box.case {
     color: #feb71d;
 }
-.our-achievements__box.cloud{
+
+.our-achievements__box.cloud {
     color: #58c9e9;
 }
-.our-achievements__box.smile{
-    color: #77de51;;
+
+.our-achievements__box.smile {
+    color: #77de51;
+    ;
 }
-.our-achievements__box.users{
+
+.our-achievements__box.users {
     color: #ff6a6d;
 }
+
 //end of our achievements
 
 //start of section why choose
-.why-choose{
+.why-choose {
     background-color: #fff;
     padding: 120px 0px 90px;
 }
-.why-choose__descr{
+
+.why-choose__descr {
     text-align: center;
 }
-.why-choose__title{
+
+.why-choose__title {
     font-size: 36px;
     color: #000;
     margin-bottom: 15px;
-    span{
+
+    span {
         color: $blue;
     }
 }
-.why-choose__text{
+
+.why-choose__text {
     color: #555555;
     line-height: 30px;
     width: 670px;
     margin: 0 auto;
 }
-.why-choose__content{
+
+.why-choose__content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
-    &-box{
+
+    &-box {
         height: 375px;
         width: 360px;
         box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
         text-align: center;
         margin-bottom: 30px;
         position: relative;
-        &::after{
+
+        &::after {
             content: "";
             font-weight: 300;
             position: absolute;
@@ -984,17 +1000,20 @@
             left: 20px;
             top: 10px;
         }
-        &-img{
+
+        &-img {
             font-size: 60px;
             margin-bottom: 45px;
             margin-top: 50px;
         }
-        &-title{
+
+        &-title {
             font-size: 24px;
             color: #000;
             margin-bottom: 24px;
         }
-        &-text{
+
+        &-text {
             line-height: 30px;
             color: #555555;
             padding: 0px 30px 10px;
@@ -1002,44 +1021,106 @@
 
     }
 }
-.lnr.lnr-license{
+
+.lnr.lnr-license {
     color: $blue;
 }
-.why-choose__content-box.payment::after{
+
+.why-choose__content-box.payment::after {
     content: '01';
 }
-.lnr.lnr-magic-wand{
+
+.lnr.lnr-magic-wand {
     color: $purple;
 }
-.why-choose__content-box.quality::after{
+
+.why-choose__content-box.quality::after {
     content: '02';
 }
-.lnr.lnr-lock{
+
+.lnr.lnr-lock {
     color: #77de51;
 }
-.why-choose__content-box.secure::after{
+
+.why-choose__content-box.secure::after {
     content: '03';
 }
-.lnr.lnr-chart-bars{
+
+.lnr.lnr-chart-bars {
     color: #feb71d;
 }
-.why-choose__content-box.code::after{
+
+.why-choose__content-box.code::after {
     content: '04';
 }
-.lnr.lnr-leaf{
+
+.lnr.lnr-leaf {
     color: #58c9e9;
 }
-.why-choose__content-box.leaf::after{
+
+.why-choose__content-box.leaf::after {
     content: '05';
 }
-.lnr.lnr-phone{
+
+.lnr.lnr-phone {
     color: #ff888a;
 }
-.why-choose__content-box.phone::after{
+
+.why-choose__content-box.phone::after {
     content: '06';
 }
 
 //end of section why choose
 
+//start of start section
+.start__inner {
+    display: flex;
 
+    &-box {
+        text-align: center;
+        padding: 100px 0px;
+        width: 960px;
+        min-height: 560px;
+        &-title{
+            font-size: 36px;
+            color: #fff;
+            margin-top: 40px;
+        }
+        &-text{
+            color: #fff;
+            line-height: 30px;
+            margin: 20px auto 0px;
+            width: 600px;
+        }
+        &-icon{
+            height: 100px;
+        }
+        button{
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 27.5px;
+            background-color: #fff;
+            padding: 19px 26px;
+            border: none;
+            outline: none;
+            margin-top: 43px;
+            cursor: pointer;
+            transition: all .5s;
+        }
+    }
+}
+.author-btn{
+    color: $blue;
+    &:hover{
+        color: #fff;
+        background-color:$purple;
+    }
+}
+.shopping-btn{
+    color: $purple;
+    &:hover{
+        color: #fff;
+        background-color:$blue;
+    }
+}
 
+//end of start section
