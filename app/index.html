@@ -17,7 +17,7 @@
     <header class="header">
         <div class="header__inner">
             <div class="container">
-                <div class="top__header-inner">
+                <div class="header__top-inner">
                     <a class="header__logo" href="#">
                         <img src="images/header-logo.png" alt="">
                     </a>
@@ -26,32 +26,32 @@
                             Become a Seller
                         </a>
                         <div class="header__top-icons">
-                            <div class="notification-icon icon-box">
+                            <div class="header__icon__box notification-icon">
                                 <a class="lnr lnr-alarm" href="#"></a>
-                                <div class="notifications-number numbers-box">
+                                <div class="header__numbers__box notifications-number">
                                     25
                                 </div>
                             </div>
-                            <div class="message-icon icon-box">
+                            <div class="header__icon__box message-icon">
                                 <a class="lnr lnr-envelope" href="#"></a>
-                                <div class="messages-number numbers-box">
+                                <div class="header__numbers__box messages-number">
                                     6
                                 </div>
                             </div>
-                            <div class="purchases-icon icon-box">
+                            <div class="header__icon__box purchases-icon">
                                 <a class="lnr lnr-cart" href="#"></a>
-                                <div class="purchases-number numbers-box">
+                                <div class="header__numbers__box purchases-number">
                                     2
                                 </div>
                             </div>
                         </div>
                         <div class="header__user-box">
-                            <div class="user-avatar" style="background-image: url(images/avatar.png);"></div>
-                            <div class="user__info">
-                                <a class="user-name" href="#">
+                            <div class="header__user-avatar" style="background-image: url(images/avatar.png);"></div>
+                            <div class="header__user-info">
+                                <a class="header__user-name" href="#">
                                     Taofiq Hakim
                                 </a>
-                                <div class="user-price">
+                                <div class="header__user-price">
                                     $20.45
                                 </div>
                             </div>
@@ -60,28 +60,36 @@
                 </div>
             </div>
         </div>
-        <div class="bottom__header-inner">
+        <div class="header__bottom-inner">
             <div class="container">
                 <div class="header__nav">
-                    <nav class="header__menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">All Products</a></li>
-                            <li><a href="#">Wordpress</a></li>
-                            <li><a href="#">Festures</a></li>
-                            <li><a href="#">Pages</a></li>
-                        </ul>
-                    </nav>
-                    <div class="bottom__header-search-form">
-                        <form>
-                            <input type="search" placeholder="Search product here....." required>
-                            <button type="submit">
-                                <a class="lnr lnr-magnifier" href="#"></a>
-                            </button>
-                        </form>
-                    </div>
+                    <ul class="header__menu">
+                        <li class="header__list-item">
+                            <a class="header__menu__link" href="#">Home</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__menu__link" href="#">All Products</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__menu__link" href="#">Wordpress</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__menu__link" href="#">Festures</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__menu__link" href="#">Pages</a>
+                        </li>
+                    </ul>
+                    <form class="header__search-form">
+                        <input class="header__search-form__input" type="search" placeholder="Search product here....."
+                            required>
+                        <button class="header__search-form__btn" type="submit">
+                            <a class="lnr lnr-magnifier" href="#"></a>
+                        </button>
+                    </form>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <main>
@@ -96,8 +104,8 @@
                         MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
                     </div>
                     <div class="create__your__product__buttons">
-                        <button class="js-1">View All Products</button>
-                        <button class="js-2">Popular Products</button>
+                        <a class="create__your__product-link" href="#">View All Products</a>
+                        <a class="create__your__product-link" href="#">Popular Products</a>
                     </div>
                 </div>
             </div>
@@ -105,19 +113,17 @@
         <section class="search__products">
             <div class="container">
                 <div class="search__products__inner">
-                    <div class="search__products_backside first"></div>
-                    <div class="search__products_backside second"></div>
-                    <div class="search__products__form">
-                        <form>
-                            <input type="search" placeholder="Search your products..." required>
-                            <select class="js-example-basic-single" name="category">
-                                <option value="All Categories">All Categories</option>
-                                <option value="New Products">New Products</option>
-                                <option value="Popular Products">Popular Products</option>
-                            </select>
-                            <button type="submit">Search Now</button>
-                        </form>
-                    </div>
+                    <div class="search__products__backside first"></div>
+                    <div class="search__products__backside second"></div>
+                    <form class="search__products__form">
+                        <input class="search__products__input" type="search" placeholder="Search your products..." required>
+                        <select class="js-example-basic-single search__products__select" name="category">
+                            <option class="search__products__option" value="All Categories">All Categories</option>
+                            <option class="search__products__option" value="New Products">New Products</option>
+                            <option class="search__products__option" value="Popular Products">Popular Products</option>
+                        </select>
+                        <button class="search__products__btn" type="submit">Search Now</button>
+                    </form>
                 </div>
             </div>
         </section>
