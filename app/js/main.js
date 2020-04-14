@@ -3,7 +3,7 @@ $(function(){
     var mixer = mixitup('.release-products__inner'); 
 });
 
-$('.featured__products-slider__inner').slick({
+$('.featured-products__slider__inner').slick({
     arrows: true,
     dots: false,
     slidesToShow: 1,
@@ -33,7 +33,20 @@ $('.featured__products-slider__inner').slick({
     
 });
 
-$('.followers-slider__inner').slick({
+ 
+$(".rateYoo").rateYo({
+ 
+  rating    : 5,
+  spacing   : "3px",
+  starWidth: "13px",
+  ratedFill: "#ffc000",
+  normalFill: "transparent",
+  readOnly: true
+  
+  
+});
+
+$('.followers-feed__slider__inner').slick({
   arrows: true,
   dots: false,
   slidesToShow: 3,
