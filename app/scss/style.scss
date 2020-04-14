@@ -25,14 +25,19 @@
 
     &__top-btn {
         background-color: $blue;
-        padding: 11px 19px 12px 18px;
+        padding: 9px 17px 10px 16px;
         border-radius: 18px;
         margin-right: 50px;
+        border: 2px solid $blue;
         height: 36px;
         font-size: 14px;
         color: #fff;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
-        transition: all .5s;
+        transition: all .7s;
+        &:hover{
+            background-color: transparent;
+            color: $blue;
+        }
     }
 
     &__top-icons {
@@ -238,15 +243,15 @@
 
 //start of section create your product
 .create-your-product {
-    background-image: linear-gradient(180deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
-    padding: 180px 0px 230px;
+    background-image: linear-gradient(-90deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
+    padding: 185px 0px 235px;
     text-align: center;
 
     &__title {
         font-size: 60px;
         color: #f3f3f8;
         line-height: 70px;
-        margin-bottom: 31px;
+        margin-bottom: 35px;
         text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 
         span {
@@ -259,7 +264,7 @@
         font-size: 20px;
         font-weight: 500;
         color: #f3f3f8;
-        margin-bottom: 68px;
+        margin-bottom: 90px;
     }
 
     &__buttons {
@@ -891,12 +896,17 @@
     background-color: $blue;
     color: #fff;
     border-radius: 27.5px;
-    border: none;
+    border: 2px solid $blue;
     outline: none;
-    padding: 19px 33px;
+    padding: 17px 31px;
     cursor: pointer;
     margin-top: 30px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    transition: all .7s;
+    &:hover{
+        background-color: transparent;
+        color: $blue;
+    }
 }
 
 .select2-selection__rendered {
@@ -1127,26 +1137,38 @@
     }
 
     &__btn {
-        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-        border-radius: 27.5px;
-        background-color: #fff;
-        border: none;
-        outline: none;
-        margin-top: 43px;
-        cursor: pointer;
-        transition: all .5s;
-        padding: 19px 26px;
-        display: inline-block;
-        width: 190px;
+        a {
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 27.5px;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            margin-top: 43px;
+            cursor: pointer;
+            transition: all .5s;
+            padding: 19px 26px;
+            display: inline-block;
+            width: 190px;
+        }
     }
 }
 
 .author-btn {
     color: $blue;
+
+    &:hover {
+        background-color: $purple;
+        color: #fff;
+    }
 }
 
 .shopping-btn {
     color: $purple;
+
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+    }
 }
 
 //end of start-shop section
@@ -1215,18 +1237,24 @@
     &__btn-box {
         text-align: center;
         margin-top: 80px;
-    }
 
-    &__btn {
-        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-        border-radius: 27.5px;
-        background-color: $blue;
-        padding: 18px 35px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        color: #fff;
+        a {
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 27.5px;
+            background-color: $blue;
+            border: 2px solid $blue;
+            padding: 16px 33px;
+            outline: none;
+            cursor: pointer;
+            color: #fff;
+            transition: all .7s;
 
+            &:hover {
+                background-color: transparent;
+                border: 2px solid $blue;
+                color: $blue;
+            }
+        }
     }
 }
 
@@ -1272,7 +1300,7 @@
             font-size: 22px;
             color: #000;
             font-weight: 500;
-            padding: 25px 10px 20px 20px;
+            padding: 25px 10px 20px 25px;
         }
 
         &-text {
@@ -1303,10 +1331,11 @@
         border-right: 1px solid #999999;
     }
 
-    &-comments{
+    &-comments {
         margin: 0px 55px;
     }
-    &__box-content{
+
+    &__box-content {
         min-height: 185px;
     }
 }
@@ -1332,3 +1361,320 @@
 }
 
 //end of latest news
+
+//start of our-support
+.our-support {
+    padding: 60px 0px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 0px 150px 0px 90px;
+    }
+
+    &__text {
+        font-size: 24px;
+        color: #000;
+        margin-top: 25px;
+    }
+
+    .guarantee {
+        span {
+            color: $blue;
+        }
+    }
+
+    .support {
+        span {
+            color: #7347c1;
+        }
+    }
+}
+
+//end of our-support
+
+//start of join us
+.join-us {
+    background-image: linear-gradient(-90deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+    padding: 112px 0px 110px;
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    &__btn-box {
+        a {
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            color: $blue;
+            padding: 17px 41px;
+            border: 2px solid #fff;
+            display: inline-block;
+            border-radius: 27.5px;
+            margin-top: 48px;
+            transition: all .7s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: transparent;
+                color: #fff;
+                border: 2px solid #fff;
+            }
+        }
+
+    }
+}
+
+//end of join us
+
+//start of footer
+.footer {
+    background-color: #262b30;
+
+    &__inner-top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 93px;
+    }
+
+    &__inner__box {
+        &.social-box {
+            width: 360px;
+        }
+
+    }
+
+    &__logo {
+        margin-top: 115px;
+        margin-bottom: 24px;
+    }
+
+    &__box__text {
+        width: 270px;
+        font-size: 15px;
+        color: #ababab;
+        line-height: 28px;
+
+        &.social-text {
+            width: 100%;
+        }
+    }
+
+    &__box-links {
+        margin-top: 25px;
+        width: 265px;
+        padding-left: 29px;
+
+        a {
+            display: block;
+            color: #ababab;
+            margin-bottom: 18px;
+            transition: all .5s;
+            &:hover{
+                color: #fff;
+            }
+        } 
+    }
+
+    &__box-link.address {
+        line-height: 26px;
+    }
+
+    &__box-link {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            top: 0px;
+            left: -29px;
+            content: "\e830";
+            width: 15px;
+            height: 15px;
+            color: #fff;
+            font-family: 'linearicons-free';
+        }
+
+        &.mail::before {
+            content: "\e818";
+        }
+
+        &.address::before {
+            content: "\e833";
+            top: 11px;
+        }
+    }
+
+    &__menu-box__title {
+        margin-top: 135px;
+        margin-bottom: 30px;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    &__menu__list-item {
+        margin-bottom: 15px;
+    }
+
+    &__menu__list-link {
+        color: #ababab;
+        font-size: 15px;
+        transition: all .5s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &__mail__form {
+        width: 100%;
+        margin-top: 29px;
+        position: relative;
+    }
+
+    &__form__input {
+        width: 100%;
+        position: relative;
+        padding: 16px 30px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        font-size: 15px;
+
+        &::-webkit-input-placeholder {
+            color: #ababab;
+        }
+
+        :-moz-placeholder {
+            color: #ababab;
+        }
+
+        :-ms-input-placeholder {
+            color: #ababab;
+        }
+    }
+
+    &__form__button {
+        position: absolute;
+        padding: 16px 31px;
+        background-color: $blue;
+        outline: none;
+        border: none;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 15px;
+        right: -1px;
+        cursor: pointer;
+    }
+
+    &__social-icons__box {
+        display: flex;
+        margin-top: 53px;
+
+    }
+
+    &__social-icon__circle {
+        width: 42px;
+        height: 42px;
+        position: relative;
+        background-color: red;
+        border-radius: 50%;
+
+        & + & {
+            margin-left: 14px;
+        }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'icomoon';
+        }
+
+        &.facebook {
+            background-color: #395799;
+
+            &::before {
+                content: "\f09a";
+                color: #fff;
+            }
+        }
+
+        &.twitter {
+            background-color: #19b2f5;
+
+            &::before {
+                content: "\f099";
+                color: #fff;
+            }
+        }
+
+        &.google {
+            background-color: #f05b44;
+
+            &::before {
+                content: "\f1a0";
+                color: #fff;
+            }
+        }
+
+        &.pinterest {
+            background-color: #9c0c1c;
+
+            &::before {
+                content: "\f0d2";
+                color: #fff;
+            }
+        }
+
+        &.linkedin {
+            background-color: #0da6be;
+
+            &::before {
+                content: "\f0e1";
+                color: #fff;
+            }
+        }
+
+        &.dribble {
+            background-color: #ea4c89;
+
+            &::before {
+                content: "\f17d";
+                color: #fff;
+            }
+        }
+
+    }
+
+    &__copy {
+        height: 94px;
+        background-color: #192027;
+        text-align: center;
+        padding-top: 38px;
+    }
+
+    &__copy__text {
+        color: #999999;
+        font-size: 15px;
+
+        span {
+            color: #fff;
+        }
+    }
+}
+
+//end of footer
