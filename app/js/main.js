@@ -3,7 +3,7 @@ $(function(){
     var mixer = mixitup('.release-products__inner'); 
 });
 
-$('.featured-products__slider__inner').slick({
+$('.featured-products__slider-inner').slick({
     arrows: true,
     dots: false,
     slidesToShow: 1,
