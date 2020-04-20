@@ -56,3 +56,11 @@ $('.followers-feed__slider__inner').slick({
   prevArrow: '<button class="slick-arrow slick-preve"><img src="..//images/icons/lnr-chevron-left.svg"></button>',
   nextArrow: '<button class="slick-arrow slick-nexte"><img src="..//images/icons/lnr-chevron-right.svg"></button>',
 });
+
+$('.menu__btn').on('click', function(){
+  $('.header__menu').slideToggle();
+});
+
+$('.header__btn-menu').on('click', function(){
+  $('.header__icons').toggleClass('active');
+});
