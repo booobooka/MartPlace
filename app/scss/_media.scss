@@ -63,6 +63,9 @@
         margin-right: 35px;
         margin-bottom: 20px;
     }
+    .how-it-works__img{
+        margin: 0px 20px;
+    }
 }
 @media (max-width: 1000px) {
 
@@ -81,8 +84,16 @@
             max-width: 92%;
         }
     }
-    
-
+    .how-it-works__box{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .how-it-works__box.-reverse{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;
+    }
 }
 @media (max-width: 940px) {
     .header {
