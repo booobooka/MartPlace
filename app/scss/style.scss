@@ -2255,6 +2255,32 @@
 
 //end of 404
 
+//start of terms
+.terms{
+    background-color: #eff1f5;
+    padding: 60px 0px 120px;
+    &__inner{
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
+        background-color: #fff;
+        padding: 40px 0px;
+    }
+    &__title{
+        font-size: 24px;
+        color: #000;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #e8ebf0;
+        padding-left: 29px;
+    }
+    &__text{
+        padding: 20px 15px 0px 31px;
+        line-height: 30px;
+        margin-bottom: 55px;
+    }
+}
+
+
+//end of terms
 
 
 //animations
