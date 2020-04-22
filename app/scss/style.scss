@@ -2199,6 +2199,62 @@
 //end of footer
 
 
+//start of 404 
+.breadcrumbs{
+    background-image: linear-gradient( -90deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
+    padding: 55px 0px;
+    &__list{
+        display: flex;
+    }
+    &__link{
+        color: #fff;
+        padding-right: 5px;
+    }
+    &__span{
+        color: #bfcad7;
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 20px;
+        margin-left: -1px;
+    }
+}
+.page-404{
+    &__inner{
+        padding: 83px 0px 115px 0px;
+        text-align: center;
+    }
+    &__img{
+        max-width: 100%;
+    }
+    &__text{
+        font-size: 30px;
+        font-weight: 500;
+        color: #000;
+        margin-top: 45px;
+        margin-bottom: 55px;
+    }
+    &__btn{
+        color: #fff;
+        background-color: $blue;
+        border: 2px solid $blue;
+        padding: 14px 44px;
+        font-size: 15px;
+        border-radius: 25px;
+        margin-top: 5px;
+        &:hover{
+            background-color: transparent;
+            border: 2px solid $blue;
+            color: $blue;
+        }
+    }
+}
+
+
+//end of 404
+
 
 
 //animations
