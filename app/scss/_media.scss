@@ -10,6 +10,7 @@
             width: 100%;
         }
     }
+   
 }
 @media (max-width: 1140px) {
     .our-services__inner {
@@ -53,6 +54,14 @@
         .release-products__box{
             max-width: 93%;
         }
+    }
+    .pricing__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .pricing__box{
+        margin-right: 35px;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 1000px) {
@@ -161,6 +170,7 @@
             max-width: 91%;
         }
     }
+    
 }
 
 
@@ -180,6 +190,7 @@
     .featured-products__item-price a{
         padding: 7px 10px;
     }
+   
     
 }
 @media (max-width: 760px) {
@@ -190,6 +201,9 @@
         .release-products__box{
             max-width: 95%;
         }
+    }
+    .pricing__box{
+        margin-right: 0px;
     }
 }
 @media (max-width: 630px) {
