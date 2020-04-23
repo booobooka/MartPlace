@@ -17,7 +17,9 @@ $('.featured-products__slider-inner').slick({
 
   $(document).ready(function() {
     $('.js-example-basic-single').select2();
+    $('.filter-bar__select-price').select2();
 });
+
 
 
  
@@ -90,3 +92,15 @@ $('.header__btn-menu').on('click', function(){
   $('.header__icons').toggleClass('active');
 });
 
+
+$('.icon-list').on('click', function () {
+  $('.favorites .release-products__box').addClass('list');
+  $('.icon-th-list').addClass('active');
+  $('.icon-th-large').removeClass('active');
+});
+
+$('.icon-normal').on('click', function () {
+  $('.favorites .release-products__box').removeClass('list');
+  $('.icon-th-large').addClass('active');
+  $('.icon-th-list').removeClass('active');
+});
