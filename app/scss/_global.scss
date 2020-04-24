@@ -123,7 +123,10 @@ body {
     width: 270px;
     background-color: #fff;
     border-top: 1px solid $blue;
-    display: none;
+    transition: all .5s;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
 }
 
 .header__list-item {
@@ -132,9 +135,8 @@ body {
     &:hover {
         .menu-link {
             &__dropdown {
-                display: block;
                 height: auto;
-                position: absolute;
+                overflow: inherit;
                 padding: 20px;
                 top: 83px;
                 border-bottom-left-radius: 3px;
