@@ -84,6 +84,10 @@ $('.menu__btn').on('click', function(){
   $('.header__menu').slideToggle();
 });
 
+$('.release-products__dots-button').on('click', function(){
+  $('.release-products__dots-menu').slideToggle();
+});
+
 $('.header__icon-box--notification-icon').on('click', function(){
   $('.notification-menu').slideToggle();
 });
