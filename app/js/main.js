@@ -43,6 +43,40 @@ $(".rateYoo").rateYo({
   
   
 });
+$(".rateYooo").rateYo({
+ 
+  rating    : 5,
+  spacing   : "3px",
+  starWidth: "13px",
+  ratedFill: "#ffc000",
+  normalFill: "transparent",
+  readOnly: true
+  
+  
+});
+
+$(".rateYoooo").rateYo({
+ 
+  rating    : 5,
+  spacing   : "3px",
+  starWidth: "14px",
+  ratedFill: "#ffc000",
+  normalFill: "transparent",
+  readOnly: true
+  
+  
+});
+$(".rateYooooo").rateYo({
+ 
+  rating    : 5,
+  spacing   : "3px",
+  starWidth: "14px",
+  ratedFill: "#ffc000",
+  normalFill: "transparent",
+  readOnly: true
+  
+  
+});
 
 $('.followers-feed__slider__inner').slick({
   arrows: true,
@@ -84,6 +118,11 @@ $('.menu__btn').on('click', function(){
   $('.header__menu').slideToggle();
 });
 
+$('.filter-bar__select-btn').on('click', function(){
+  $('.filter-bar__dropdow').slideToggle();
+});
+
+
 $('.release-products__dots-button').on('click', function(){
   $('.release-products__dots-menu').slideToggle();
 });
@@ -101,23 +140,48 @@ $('.header__user-box').on('click', function(){
   $('.user-box__dropdown').slideToggle();
 });
 
-
-
-
-
 $('.icon-list').on('click', function () {
   $('.favorites .release-products__box').addClass('list');
+  $('.category__item').addClass('list');
   $('.icon-th-list').addClass('active');
   $('.icon-th-large').removeClass('active');
 });
 
 $('.icon-normal').on('click', function () {
   $('.favorites .release-products__box').removeClass('list');
+  $('.category__item').removeClass('list');
   $('.icon-th-large').addClass('active');
   $('.icon-th-list').removeClass('active');
 });
 
-var mixer = mixitup('.release-products__inner'); 
-   
+$('.single__tabs-box .single__tab').on('click', function(event) {
+  var id = $(this).attr('data-id');
+    $('.single__tabs-box').find('.single__tab-item').removeClass('active-tab').hide();
+    $('.single__tabs-box').find('.single__tab').removeClass('active');
+    $(this).addClass('active');
+    $('#'+id).addClass('active-tab').fadeIn();
+    return false;
+  });
+
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 325,
+    from: 30,
+    to: 300,
+    prefix: "$"
+
+  });
+
+let mix = $('.release-products__inner');
+if (mix){
+  var mixer = mixitup(mix);
+};
+
+
+document.getElementById('.icon-list').onclick = function() {
+  document.getElementByClassName('.category__item').style.display = none;
+
+}
 });
 
